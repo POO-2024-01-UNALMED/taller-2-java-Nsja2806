@@ -8,7 +8,9 @@ public class Motor{
 		this.registro=registro;	
 	}
 	void cambiarTipo(String tipo){
-		if (tipo=="electrico")||(tipo=="gasolina"){
+		if (tipo=="electrico"){
+			this.tipo=tipo;
+		}else if (tipo=="gasolina"){
 			this.tipo=tipo;
 		}
 	} 
