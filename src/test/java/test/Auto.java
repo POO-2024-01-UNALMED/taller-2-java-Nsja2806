@@ -12,7 +12,7 @@ public class Auto {
  }
  public String verificarRegistro() {
 	 String x="Las piezas no son originales";
-	 if (Auto.registro==Asiento.registro && Asiento.registro==Motor.registro){
+	 if (Auto.registro==Asiento.registro) && (Asiento.registro==Motor.registro){
 		 x="Auto original";
 	 }
 	return x;
