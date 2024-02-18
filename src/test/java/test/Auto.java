@@ -4,8 +4,8 @@ public class Auto {
  public int precio;
  public Asiento[] asientos;
  public String marca;
- public static int registro;
- static int cantidadCreados;
+ public int registro;
+ int cantidadCreados;
  
  public int cantidadAsientos() {
 	 return asientos.length;
