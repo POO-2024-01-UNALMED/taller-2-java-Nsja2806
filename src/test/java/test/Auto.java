@@ -4,17 +4,21 @@ public class Auto{
  int precio;
  Asiento[] asientos;
  String marca;
- int registro;
+ static int registro;
  int cantidadCreados;
  
  int cantidadAsientos(){
 	 return asientos.length;
  }
  String verificarRegistro(){
-	 String x="Las piezas no son originales";
-	 if (Auto.registro==Asiento.registro) && (Asiento.registro==Motor.registro){
-		 x="Auto original";
-	 }
-	return x;
+	String z=("Auto original");
+	 if (Auto.registro==Asiento.registro){
+		 boolean x=true;
+	 }if (Asiento.registro==Motor.registro){
+		boolean y=true;
+	}if (true&&true){
+		
+	}
+	return z;
 	}
 }

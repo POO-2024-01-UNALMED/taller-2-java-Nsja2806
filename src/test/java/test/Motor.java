@@ -3,9 +3,9 @@ package test;
 public class Motor{
 	int numeroCilindros;
 	String tipo;
-	int registro;
+	static int registro;
 	void cambiarRegistro(int registro){
-		this.registro=registro;	
+		Motor.registro=registro;	
 	}
 	void cambiarTipo(String tipo){
 		if (tipo=="electrico"){
