@@ -1,5 +1,5 @@
 package test;
-public class Auto {
+public class Auto{
  String modelo;
  int precio;
  Asiento[] asientos;
@@ -7,12 +7,12 @@ public class Auto {
  int registro;
  int cantidadCreados;
  
- int cantidadAsientos() {
+ int cantidadAsientos(){
 	 return asientos.length;
  }
- String verificarRegistro() {
+ String verificarRegistro(){
 	 String x="Las piezas no son originales";
-	 if (Auto.registro==Asiento.registro) && (Asiento.registro==Motor.registro){
+	 if (Auto.registro==Asiento.registro)&&(Asiento.registro==Motor.registro){
 		 x="Auto original";
 	 }
 	return x;
