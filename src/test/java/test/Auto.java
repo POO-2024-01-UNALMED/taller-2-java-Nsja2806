@@ -4,17 +4,30 @@ public class Auto{
  int precio;
  Asiento[] asientos;
  String marca;
- static int registro;
- int cantidadCreados;
+ int registro;
+ Motor motor;
+ static int cantidadCreados;
  
  int cantidadAsientos(){
-	 return asientos.length;
+	int a=0;
+	for (Asiento x:asientos){
+		if(x!=null){
+			a++;
+		}
+	}
+	 return a;
  }
  String verificarIntegridad(){
-	if ((Asiento.registro==Auto.registro)&&(Motor.registro==Asiento.registro)){
-		return "Auto original";
-	}else{
+	if (motor.registro!=registro){
 		return "Las piezas no son originales";
 	}
- }
+	for (Asiento x:asientos){
+		if(x!=null){
+			if (x.registro!=registro){
+			return "Las piezas no son originales";
+			}
+	}
+	}
+	return "Auto Original";
+}
 }
