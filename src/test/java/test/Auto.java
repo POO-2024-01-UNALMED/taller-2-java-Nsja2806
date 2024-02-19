@@ -10,15 +10,11 @@ public class Auto{
  int cantidadAsientos(){
 	 return asientos.length;
  }
- String verificarRegistro(){
-	String z=("Auto original");
-	 if (Auto.registro==Asiento.registro){
-		 boolean x=true;
-	 }if (Asiento.registro==Motor.registro){
-		boolean y=true;
-	}if (true&&true){
-		
+ String verificarIntegridad(){
+	if ((Asiento.registro==Auto.registro)&&(Motor.registro==Asiento.registro)){
+		return "Auto original";
+	}else{
+		return "Las piezas no son originales";
 	}
-	return z;
-	}
+ }
 }
