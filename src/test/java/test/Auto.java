@@ -26,8 +26,8 @@ public class Auto{
 			if (x.registro!=registro){
 			return "Las piezas no son originales";
 			}
+		}
 	}
+	return "Auto original";
 	}
-	return "Auto Original";
-}
 }
